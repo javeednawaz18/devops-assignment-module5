@@ -46,5 +46,5 @@ jobs:
       - name: Deploy application
         run: |
           echo "Starting deployment..."
-          # এখানে তোমার deploy command বসাও (যেমন docker-compose up -d)
-
+          npm install
+          nohup npm run start &
